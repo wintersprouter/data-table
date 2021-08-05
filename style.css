@@ -73,7 +73,7 @@ body {
   padding: 42px 50px 68px 50px;
   max-height: 100vh;
   /* 當內容溢出時瀏覽器的效果類似 scroll */
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 .main__title {
   margin-bottom: 34px;
@@ -128,7 +128,7 @@ body {
 }
 .table__cell--action {
   width: 210px;
-  position: relative;  
+  position: relative;
 }
 .cell__action__icon {
   cursor: pointer;
@@ -149,7 +149,7 @@ body {
   height: 120px;
   background: var(--white);
   border: 1px solid var(--border-color);
-} 
+}
 .hidden {
   display: none;
 }
@@ -166,4 +166,30 @@ body {
 }
 .menu__item__icon {
   margin-right: 14px;
-} 
+}
+.sidebar__home {
+  min-height: 64px;
+  background: var(--logo-url);
+  background-size: 100% 100%;
+  margin-bottom: 83px;
+  cursor: pointer;
+}
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar__menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.sidebar__menu__link--active {
+  background: var(--white);
+}
+.sidebar__menu > div:not(:last-child) {
+  margin-bottom: 55px;
+}
