@@ -100,13 +100,9 @@ const tableRowsInput = document.querySelectorAll(
 // toggle handler
 const checkedToggleHandler = (event) => {
   const targetRow = event.target.parentElement.parentElement
-  if (event.target.checked) {
-    targetRow.classList.add('table__row__checked')
-  } else {
-    targetRow.classList.remove('table__row__checked')
-  }
+  targetRow.classList.toggle('table__row__checked')
 }
 // bind the event
 for (let i = 0; i < tableRowsInput.length; i++) {
-  tableRowsInput[i].addEventListener('click', checkedToggleHandler)
+  tableRowsInput[i].addEventListener('change', checkedToggleHandler)
 }
