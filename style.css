@@ -109,6 +109,12 @@ body {
   height: 50px;
   border-bottom: 1px solid var(--border-color);
 }
+.table__body tr:nth-child(odd) {
+  background-color: var(--zebra-color);
+}
+.table__body tr:nth-child(even) {
+  background-color: var(--table-background-color);
+}
 .table__cell {
   text-align: center;
 }
