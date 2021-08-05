@@ -55,3 +55,30 @@ html {
   color: var(--main-text-color);
 }
 /* global end */
+body {
+  display: flex;
+  height: 100%;
+  min-height: 480px;
+  background: var(--background-grey);
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  background: var(--main-dark);
+  padding-top: 30px;
+}
+.main {
+  flex: 1;
+  padding: 42px 50px 68px 50px;
+  max-height: 100vh;
+  /* 當內容溢出時瀏覽器的效果類似 scroll */
+  overflow-y: auto; 
+}
+.main__title {
+  margin-bottom: 34px;
+  font-size: 48px;
+}
+.main__table {
+  background: var(--table-background-color);
+}
