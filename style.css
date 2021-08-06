@@ -125,6 +125,9 @@ body {
 .table__row__checked {
   background-color: var(--main-color);
 }
+.table__body tr:hover {
+  background-color: var(--background-grey);
+}
 
 .table__cell {
   text-align: center;
