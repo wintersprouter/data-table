@@ -1,4 +1,8 @@
 # 切版練習：廣告排版系統 data-table
+<p align="center">
+<img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/data-table.gif">
+</p>
+
 ## 使用技術 
   -  HTML排版
   -  CSS variable
@@ -12,3 +16,12 @@
   -  一鍵轉換 dark mode
   -  廣告列 hover 效果
   -  一鍵選取所有廣告
+## Demo
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/whiteMode.png"/>
+  一般模式
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/darkMode.png"/>
+  dark mode
+</p>
