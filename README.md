@@ -1,6 +1,6 @@
 # 切版練習：廣告排版系統 data-table
 <p align="center">
-<img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/data-table.gif">
+<img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/Desktop%202021.gif">
 </p>
 
 ## 使用技術 
