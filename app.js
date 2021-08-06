@@ -94,15 +94,10 @@ function renderTableRows (data) {
 renderTableRows(data)
 
 // select all table_row--checkbox input node
-const tableRowsInput = document.querySelectorAll(
-  'td.table__cell--checkbox input[type=checkbox]'
-)
+const tableRowsInput = document.querySelector('.table__body')
 // toggle handler
 const checkedToggleHandler = (event) => {
   const targetRow = event.target.parentElement.parentElement
   targetRow.classList.toggle('table__row__checked')
 }
-// bind the event
-for (let i = 0; i < tableRowsInput.length; i++) {
-  tableRowsInput[i].addEventListener('change', checkedToggleHandler)
-}
+tableRowsInput.addEventListener('change', checkedToggleHandler)
