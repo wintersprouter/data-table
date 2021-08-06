@@ -31,7 +31,7 @@ function renderTableRows (data) {
 
   for (let i = 1; i < data; i++) {
     rawHTML += `
-      <tr class="table__row">
+      <tr class="table__row table__row__toggle">
         <td class="table__cell table__cell--checkbox">
           <input type="checkbox" />
         </td>
@@ -93,11 +93,31 @@ function renderTableRows (data) {
 }
 renderTableRows(data)
 
-// select all table_row--checkbox input node
-const tableRowsInput = document.querySelector('.table__body')
+const tableRowsInput = document.querySelector('.main__table')
+const checkedToggleAll = document.querySelectorAll(' .table__row__toggle')
+
 // toggle handler
 const checkedToggleHandler = (event) => {
   const targetRow = event.target.parentElement.parentElement
-  targetRow.classList.toggle('table__row__checked')
+  // click header's checkbox && checkbox 's value is checked
+  if (targetRow.classList.contains('table__header') && event.target.checked) {
+    checkedToggleAll.forEach((row) => {
+      row.classList.add('table__row__checked')
+      row.querySelector('input').checked = 'checked'
+    })
+    // click header's checkbox
+  } else if (targetRow.classList.contains('table__header')) {
+    checkedToggleAll.forEach((row) => {
+      row.classList.remove('table__row__checked')
+      row.querySelector('input').checked = ''
+    })
+
+    // click single row to toggle checked
+  } else {
+    targetRow.classList.toggle('table__row__checked')
+    targetRow.firstElementChild.firstElementChild.toggleAttribute('checked')
+  }
 }
+
+// bind the event
 tableRowsInput.addEventListener('change', checkedToggleHandler)
