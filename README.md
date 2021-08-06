@@ -2,8 +2,11 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/wintersprouter/data-table/master/public/Desktop%202021.gif">
 </p>
+
 ## 實作過程
+
 https://www.coderbridge.com/series/3f448a87881242f9ba9150c807dbf840/posts/967ab2e6708a4c04971ddde9bd6dffe0
+
 ## 使用技術 
   -  HTML排版
   -  CSS variable
